@@ -1,0 +1,146 @@
+
+/* does not affect responsiveness */
+.gradient-bg {
+    background: linear-gradient(300deg, #E0DCBC, #5A5B4C);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+    display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
+    text-align: start;
+    justify-content: center;
+    align-items: center;
+    padding-top: 75px;
+}
+
+.feature-bg {
+    background-color: white;
+    opacity: 0.7;
+    border-radius: 10px;
+}
+
+.hero-intro {
+    padding: 15px 50px;
+    margin-bottom: 75px;
+    width: 50%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-family: "Perandory SemCond", 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    color: black;
+}
+
+h2 {
+    font-family: "Barlow Condensed", Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    color: black;
+}
+
+span {
+    font-weight: 500; 
+    color: #b999fa;
+}
+
+.section-header {
+    font-family: "Perandory SemCond", 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    color: black;
+    font-size: 3rem;
+    margin-bottom: 0;
+    height: 55px;
+}
+
+.projects {
+    font-size: 10pt;
+    font-family: "Barlow Condensed", Arial, Helvetica, sans-serif;
+    color: #676e31;
+}
+
+.feature-item {
+    display: flex;
+    gap: 5px;
+}
+
+.hobbies {
+    font-size: 10pt;
+    font-family: "Barlow Condensed", Arial, Helvetica, sans-serif;
+    color: #676e31;
+}
+
+
+.skills-container { /* the background of the skill bars */
+    background-color: #E2E2E2;
+    margin-left: 15px;
+}
+
+.skills { /* the labels on the skill bars */
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 5px;
+    color: white;
+    font-family: "Barlow Condensed", Arial, Helvetica, sans-serif;
+}
+
+.MATLAB {width: 60%; background-color: #5A5B4C;}
+.HTML {width: 48.75%; background-color: #676e31;}
+.CSS {width: 37.5%; background-color: #35362C;}
+.bootstrap {width: 18.75%; background-color: #5F4475;}
+
+.skills-item {margin-bottom: 0; font-family: "Barlow Condensed", Arial, Helvetica, sans-serif; font-weight: 500; font-size: 1.5rem;} /* the skill labels */
+
+footer {
+    width: 100%;
+    padding: 24px;
+    color: #E0DCBC;
+}
+
+
+/* affected by responsiveness */
+@media(width > 992px) {
+    .section-bg {
+        width: 80%;
+        margin-bottom: 75px;
+    }
+
+    .features {
+    padding: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    }
+
+    .feat-desc {
+        height: 200px;
+    }
+}
+
+@media(width < 992px) {
+    .section-bg {
+        width: 65%;
+        margin-bottom: 75px;
+    }
+
+    .features {
+    padding: 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+    gap: 30px;
+    }
+
+    .feat-desc {
+        font-size: 1.4rem;
+        width: 300px;
+    }
+}
+
