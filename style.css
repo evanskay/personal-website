@@ -89,6 +89,15 @@ span {
     font-family: "Barlow Condensed", Arial, Helvetica, sans-serif;
 }
 
+.skills-group {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+    padding: 25px;
+    margin-bottom: 75px;
+}
+
 .MATLAB {width: 60%; background-color: #5A5B4C;}
 .HTML {width: 48.75%; background-color: #676e31;}
 .CSS {width: 37.5%; background-color: #35362C;}
@@ -165,7 +174,7 @@ footer {
         font-size: 2rem;
     }
 
-    .skills-section {
+    .skills-group {
         margin: 0;
     }
 }
